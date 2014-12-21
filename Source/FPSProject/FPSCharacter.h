@@ -16,6 +16,12 @@ class FPSPROJECT_API AFPSCharacter : public ACharacter
 	AFPSCharacter(const FObjectInitializer& PCIP);
 
 	virtual void BeginPlay() override;
+	//sets jump flag when key is pressed
+	UFUNCTION()
+	void OnStartJump();
+	//clears jump flag when key is released
+	UFUNCTION()
+	void OnStopJump();
 		
 protected:
 
