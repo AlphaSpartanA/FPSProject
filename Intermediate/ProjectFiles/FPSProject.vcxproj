@@ -48,6 +48,7 @@
     <None Include="..\..\Source\FPSProjectEditor.Target.cs" />
     <None Include="..\..\Config\DefaultEditor.ini" />
     <None Include="..\..\Config\DefaultEngine.ini" />
+    <None Include="..\..\Config\DefaultInput.ini" />
     <ClCompile Include="..\..\Source\FPSProject\FPSCharacter.cpp" />
     <ClInclude Include="..\..\Source\FPSProject\FPSCharacter.h" />
     <ClCompile Include="..\..\Source\FPSProject\FPSGameMode.cpp" />
@@ -55,6 +56,8 @@
     <None Include="..\..\Source\FPSProject\FPSProject.Build.cs" />
     <ClCompile Include="..\..\Source\FPSProject\FPSProject.cpp" />
     <ClInclude Include="..\..\Source\FPSProject\FPSProject.h" />
+    <ClCompile Include="..\..\Source\FPSProject\FPSProjectile.cpp" />
+    <ClInclude Include="..\..\Source\FPSProject\FPSProjectile.h" />
     <ResourceCompile Include="..\..\Source\FPSProject\Resources\Windows\FPSProject.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

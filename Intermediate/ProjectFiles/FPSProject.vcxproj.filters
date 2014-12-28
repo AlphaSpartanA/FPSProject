@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\FPSProject.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{A00B3D0D-2D3E-4808-949A-D709389CC9C6}</UniqueIdentifier>
+			<UniqueIdentifier>{4902A036-20B9-41B9-878A-B5F7554FECF4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\FPSProject.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{703AACAA-53B4-4846-90E9-C0E871B66C27}</UniqueIdentifier>
+			<UniqueIdentifier>{1D178018-0E0A-4F3A-82F9-92905BCBA1DA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -21,8 +21,11 @@
 		<None Include="..\..\Config\DefaultEngine.ini">
 			<Filter>Config</Filter>
 		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
 		<Filter Include="Source\FPSProject">
-			<UniqueIdentifier>{D9E19264-73F9-4243-9205-7AA9168238C1}</UniqueIdentifier>
+			<UniqueIdentifier>{16049C6B-52CE-4E22-A591-4448763343D0}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\FPSProject\FPSCharacter.cpp">
 			<Filter>Source\FPSProject</Filter>
@@ -45,11 +48,17 @@
 		<ClInclude Include="..\..\Source\FPSProject\FPSProject.h">
 			<Filter>Source\FPSProject</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\FPSProject\FPSProjectile.cpp">
+			<Filter>Source\FPSProject</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FPSProject\FPSProjectile.h">
+			<Filter>Source\FPSProject</Filter>
+		</ClInclude >
 		<Filter Include="Source\FPSProject\Resources">
-			<UniqueIdentifier>{EA14B60C-A01D-4C8A-9561-530437F5C598}</UniqueIdentifier>
+			<UniqueIdentifier>{6556C189-F87A-4A9B-A210-FF8AF69E0657}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\FPSProject\Resources\Windows">
-			<UniqueIdentifier>{4D073516-4271-4E14-82F2-4D2658A05B1B}</UniqueIdentifier>
+			<UniqueIdentifier>{E2569663-0125-4655-BFCB-0D791B2CC7CE}</UniqueIdentifier>
 		</Filter>
 		<ResourceCompile Include="..\..\Source\FPSProject\Resources\Windows\FPSProject.rc">
 			<Filter>Source\FPSProject\Resources\Windows</Filter>

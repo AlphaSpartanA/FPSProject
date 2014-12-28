@@ -13,9 +13,7 @@ class FPSPROJECT_API AFPSGameMode : public AGameMode
 {
 	GENERATED_BODY()
 
-		AFPSGameMode(const FObjectInitializer& PCIP);
+	AFPSGameMode(const FObjectInitializer& PCIP);
 
-		virtual void BeginPlay() override;
-	
-	
+	virtual void BeginPlay() override;
 };

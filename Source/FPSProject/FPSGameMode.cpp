@@ -3,13 +3,24 @@
 #include "FPSProject.h"
 #include "FPSGameMode.h"
 #include "Engine.h" //for version 4.4+
-#include "FPSCharacter.h"
 
 
 AFPSGameMode::AFPSGameMode(const class FObjectInitializer& PCIP)
 	:Super(PCIP)
 {
-	DefaultPawnClass = AFPSCharacter::StaticClass();
+	//set player pawn class to our blueprinted character
+	static ConstructorHelpers::FObjectFinder<UBlueprint> PlayerPawnObject(TEXT("Blueprint'/Game/Blueprints/BP_FPSCharacter.BP_FPSCharacter'"));
+	if (PlayerPawnObject.Object != NULL)
+	{
+		DefaultPawnClass = (UClass*)PlayerPawnObject.Object->GeneratedClass;
+	}
+	else
+	{
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, TEXT("Failed to load chacrater blueprint."));
+		}
+	}
 }
 
 void AFPSGameMode::BeginPlay()
